@@ -1,0 +1,7 @@
+a.page_before,a.page_after{background-color: #12cd3e;display: block;width: 30px;height: 30px;float: left;}
+a.disabled_page{background-color: #ccc;}
+a:first-child{margin-left: 0;}
+a.page_number{font-size: 14px;color: #333;line-height: 30px;width: 30px;height: 30px;text-align: center;display: inline-block;*display: inline;zoom:1;vertical-align: middle;text-decoration: none ; outline: none ;float: left;}
+a:hover,a.page_active{color: #12cd3e;}
+a.page_before em{display: block;width: 30px;height: 30px;background: url("../images/page_before.png") no-repeat center;}
+a.page_after em{display: block;width: 30px;height: 30px;background: url("../images/page_after.png") no-repeat center;}

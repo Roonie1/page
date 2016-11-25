@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="page"></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+<script>
+    !(function($){
+        $(".page").page({
+            totalPage:10,//总共页数
+            currentPage:1,//当前第几页
+            pageUrl:function(page){
+                return "url"+page;//异步请求的接口
+            },
+            callback:function(data){
+                console.log(data);//请求返回来的json数据
+            }
+        });
+    })(jQuery)
+</script>
+</body>
+
+</html>
